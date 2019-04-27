@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+const wt = require('../src/workTreeInit');
+
+wt.init();
