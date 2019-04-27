@@ -1,12 +1,11 @@
-# soku
-基于命令行搜索各种命令、CSS语法、各种函数用法的工具
+# workTreeCli
+简化git worktree命令操作的命令行工具
 
 # 安装方法(可能有些源还没有同步到下载不到)
 
 ```
-sudo npm install soku
+sudo npm install workTreeCli
 ```
 
 # 功能
 
-暂时只实现了，Linux命令用法的精确查询和模糊匹配相关命令

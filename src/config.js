@@ -12,6 +12,7 @@ module.exports = {
     create: 'create',
     l: 'showList',
     list: 'showList',
+    config: 'config',
   },
   DEFAULT_CLI: 'help',
   COMMANDS: [
@@ -20,5 +21,6 @@ module.exports = {
     'add',
     'create',
     'showList',
+    'config',
   ]
 }

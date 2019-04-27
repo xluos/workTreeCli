@@ -27,12 +27,18 @@
   "dependencies": {
     "chalk": "^2.3.2",
     "clear": "^0.1.0",
+    "cli-color": "^1.4.0",
     "clui": "^0.3.6",
     "configstore": "^4.0.0",
     "figlet": "^1.2.1",
+    "fs-extra": "^7.0.1",
     "inquirer": "^6.3.1",
     "minimist": "^1.2.0",
     "msee": "^0.3.5",
     "simple-git": "^1.110.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^5.0.5",
+    "simple-git-types": "^1.53.10"
   }
 }
