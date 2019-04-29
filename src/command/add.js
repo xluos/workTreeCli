@@ -1,13 +1,13 @@
 const inquirer = require('inquirer');
-const fs = require('fs')
 const simpleGit = require('simple-git')();
 const Configstore = require('configstore');
 const CONFIG = new Configstore('WORKTERRCLI');
+const { isGitPath, addReop } = require('../../lib/utils');
 
 function isGitRepo (path) {
   const done = this.async();
   let Git
-  if(fs.existsSync(`${path}/.git`)) {
+  if(isGitPath(path)) {
     Git = simpleGit.cwd(path)
   } else {
     done('路径不存在或不是一个Git仓库', false)
@@ -22,13 +22,6 @@ function isGitRepo (path) {
       done(`仓库已存在`, true)
       return
     }
-    CONFIG.set('reop', [
-      ...reop,
-      {
-        path: path,
-        remarks: ''
-      }
-    ])
     done(null, true)
   })
 }
@@ -44,6 +37,7 @@ module.exports = {
         validate: isGitRepo
       }
     ]).then((answers) => {
+      addReop(answers.path)
       console.log(`添加仓库：${answers.path} 成功`);
     })
   }
