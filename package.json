@@ -1,6 +1,6 @@
 {
   "name": "worktreecli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "git worktree",
   "main": "./src/workTreeInit.js",
   "scripts": {
@@ -19,8 +19,6 @@
     "workTreeCli": "./bin/wt",
     "wtc": "./bin/wt"
   },
-  "man": "./doc/help.md",
-  "directories.doc": "./doc",
   "author": "codedeer",
   "license": "MIT",
   "bugs": {

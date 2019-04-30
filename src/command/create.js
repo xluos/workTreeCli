@@ -15,9 +15,8 @@ const countdown = new Spinner('正在创建。。。。', ['⣾','⣽','⣻','�
 function getNewPath () {
   const path = process.cwd()
   let i = 2;
-  // 不要创建太多数字 10个足够了  超过10个自己输入
-  while (isPath(`${path}${i}`) && i < 10) i++;
-  return i < 10 ? `${path}${i}` : `数字目录太多请手动输入`;
+  while (isPath(`${path}${i}`)) i++;
+  return `${path}${i}`;
 }
 
 module.exports = {
