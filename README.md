@@ -10,9 +10,9 @@ sudo npm install -g worktreecli
 # 功能
 
 
-  h(help)			获取帮助
+  	h(help)			获取帮助
 
-  l(list)			查看列表
+  	l(list)			查看列表
 
 	a(add)			添加仓库
 
